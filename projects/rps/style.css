@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/whitebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Source Sans 3';
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.header > h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(2vw, 4vw, 6vw);
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #7209d4, #2832d4 33%, #00a5b2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typewriter p {
+    font-size: clamp(1vw, 2vw, 3vw);
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        animation-timing-function: linear;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.container > div {
+    padding: 10px;
+}
+
+.display {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: fit-content;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+#output {
+    border-radius: 5px;
+    background-color: #000;
+    color: #FEBE10;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+#console {
+    padding: 20px;
+}
+
+#round-counter {
+    padding: 7px;
+    width: fit-content;
+    color: #FFD700;
+    font-size: 20px;
+    text-align: left;
+}
+
+.counters {
+    font-size: 20px;
+    background-color: rgb(17, 17, 177);
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    gap: 40px;
+}
+
+.keys > button {
+    font-size: 30px;
+    background: #ffe75d;
+    border: #ffe75d;
+    border-radius: 5px;
+    padding: 30px 30px;
+    box-shadow: 4px 4px 0 #ffbb00;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.keys > button:active {
+    box-shadow: 0 0 0 #ffbb00;
+    transform: translateX(4px) translateY(4px);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > button {
+    background: #fd5c63;
+    border: #fd5c63;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 #D2122E;
+    padding: 8px 20px;
+    margin-left: 10px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.footer > button:active {
+    box-shadow: 0 0 0 #D2122E;
+    transform: translateX(4px) translateY(4px);
+}
+
+.footer-links {
+    width: 100%;
+    position: absolute;
+    bottom: 3%; 
+}
+
+.footer-links > div {
+    display: flex;
+    justify-content: center;
+}

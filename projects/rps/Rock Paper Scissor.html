@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Sans+3&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Rock Paper Scissor</h1>
+        <div class="typewriter">
+            <p>Get Ready To Test Your Luck Against Computer</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="display">
+            <div id="output">
+                <div id="round-counter">
+                    <span><sup>R </sup><b id="current-round"></b></span>
+                </div>
+                <p id="console">Choose Your Move</pid>
+            </div>
+            <div class="counters">
+                <p>Player : <span id="userScore"></span></p>
+                <p>Computer : <span id="computerScore"></span></p>
+            </div>
+        </div>
+
+        <div class="keys">
+            <button id="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button id="paper"><i class="fa-solid fa-hand"></i></button>
+            <button id="scissor"><i class="fa-solid fa-hand-scissors"></i></button>
+        </div>
+
+        <div class="footer">
+            <p>Want to test your luck again ?</p>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-text">
+            <p>© 2023 Serius. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
