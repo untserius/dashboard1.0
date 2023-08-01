@@ -337,6 +337,15 @@ h5 {
 
 @media screen and (max-width: 900px) {
 
+    .project {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .project img {
+        filter: grayscale(0%);
+        opacity: 100%;
+    }
+
     .navbar .logo {
         position: absolute;
         top: 55px;
@@ -379,6 +388,10 @@ h5 {
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;
+    }
+
+    .nav-links a {
+        color: #000;
     }
 
     /* ...................navbar2................*/
