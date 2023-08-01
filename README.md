@@ -1,4 +1,4 @@
-# Serius v2 - Work in Progress
+# Serius v2 - My Portfolio
 
 This repository contains the code for my personal portfolio website, showcasing my projects and information as a Frontend Developer.
 
